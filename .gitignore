@@ -1,0 +1,12 @@
+# Data files
+data/raw/*
+data/processed/*
+
+# Python artifacts
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+
+# Models
+models/*
