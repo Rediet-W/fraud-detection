@@ -18,3 +18,9 @@ This project aims to detect fraudulent transactions across two distinct streams:
 - **Geolocation Enrichment**: Mapped IP addresses to countries using `pd.merge_asof` to identify high-risk origin points.
 - **Feature Engineering**: Engineered behavioral features (`time_since_signup`, `device_count`) to capture fraud patterns.
 - **Handling Imbalance**: Identified severe class imbalance and prepared the workflow for SMOTE (to be applied in the modeling phase).
+
+## Task 2 - Model Building
+- **Baseline**: Logistic Regression provided a baseline performance.
+- **Ensemble**: Random Forest + SMOTE yielded the best AUC-PR, effectively balancing precision and recall.
+- **Validation**: Performed Stratified K-Fold (k=5) to ensure performance consistency.
+- **Model Storage**: The best-performing model is serialized in `models/fraud_detection_model.pkl`.
